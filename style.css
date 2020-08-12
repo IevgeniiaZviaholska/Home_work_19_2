@@ -1,0 +1,131 @@
+.page {
+	max-width: 1308px;
+   font-family: 'Roboto Condensed', sans-serif;
+	font-size: 22px; 
+	font-weight: 700;
+	color: #1d1d1d;   
+}
+ul{
+	margin-top: 20px;
+   list-style: none;
+	padding: 0px; 
+}
+
+.container {
+	max-width: 1120px;
+	padding: 90px 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.grid__body{
+	display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 540px 540px;
+   gap: 20px 20px;
+} 
+
+.grid__item {
+	position: relative;
+	background-color: white;
+}
+.grid__item:hover,
+.grid__item:focus{
+	background-image: linear-gradient(to bottom, rgba(248, 239, 239, 0.007), #F2EEE2);
+   color: gray;
+}
+
+.big {	
+	grid-column-start: 1;
+	grid-column-end: 3;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	
+}
+.grid__overlay{
+	position: absolute;
+	top: 0;
+	bottom: 0px;
+	left: 0px;
+	right: 0;
+	background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.2), #000000);
+}
+.grid__item .big:hover{
+	color: grey;
+	background-image:linear-gradient(to bottom, rgba(248, 244, 244, 0.2), #b3adad);
+}
+.grid__card-main{
+	position: absolute;
+	top: 0;
+	bottom: 0px;
+	left: 0px;
+	right: 0;
+	padding: 20px;	
+}
+
+.grid__card {
+	display: flex;
+	flex-direction: column;
+	padding: 25px;
+	height: 240px;	
+}
+
+.grid__date {
+	font-size: 13px;
+	height: 13px;
+   font-weight: 400;
+   line-height: 2.31;
+   letter-spacing: 0.33px;  
+   color: #818181;
+}
+
+.grid__title {
+	font-size: 22px;   
+   line-height: 1.36;
+   letter-spacing: 0.55px;
+	text-align: left;
+	flex: 1 0 auto;
+}
+
+.grid__title-main {
+	font-size: 30px;   
+   line-height: 1.2;
+   letter-spacing: 0.75px;
+   text-align: left;
+	color: white;
+}
+
+.grid__image {
+	width: 100%;
+}
+
+.avatar {
+	background-image: url(/face.png);
+	width: 54px;
+	height: 54px;
+	border-radius: 50%;
+	flex-shrink: 0;
+}
+.avatar:hover,
+.avatar:focus{
+	border: black 1px solid;
+}
+
+
+.loading {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 80px;
+   margin-bottom: 100px;
+   font-size: 13px;
+   color: #99A5B0;
+}
+
+.logo {
+	background-image: url(2-layers.png);
+   background-repeat: no-repeat;
+   height: 35px;
+   width: 35px;
+}
